@@ -1,0 +1,6 @@
+homepage: "https://github.com/lvandeve/lodepng"
+language: c++
+primary_contact: "lvandeve@gmail.com"
+sanitizers:
+- address
+- undefined
