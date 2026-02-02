@@ -1,0 +1,14 @@
+homepage: "https://github.com/libjpeg-turbo/libjpeg-turbo"
+language: c++
+vendor_ccs:
+  - "aosmond@mozilla.com"
+  - "tnikkel@mozilla.com"
+  - "twsmith@mozilla.com"
+  - "information@libjpeg-turbo.org"
+sanitizers:
+  - address
+  - memory
+  - undefined
+architectures:
+  - x86_64
+  - i386
