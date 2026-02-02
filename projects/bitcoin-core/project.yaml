@@ -1,0 +1,22 @@
+homepage: "https://github.com/bitcoin/bitcoin"
+main_repo: 'https://github.com/bitcoin/bitcoin.git'
+language: c++
+primary_contact: "macro.fuzzing.uxuga@aleeas.com"
+auto_ccs:
+  - "fanquake@gmail.com"
+  - "jonas@chaincode.com"
+  - "pieter@chaincode.com"
+  - "n.goeggi@gmail.com"
+  - "achow101@gmail.com"
+sanitizers:
+  - address
+  - undefined
+  - memory
+architectures:
+  - x86_64
+  - i386
+fuzzing_engines:
+  - centipede
+  - libfuzzer
+  - honggfuzz
+  - afl

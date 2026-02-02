@@ -1,0 +1,15 @@
+homepage: "https://github.com/google/brunsli"
+language: c++
+primary_contact: "eustas@chromium.org"
+vendor_ccs:
+  - "jkew@mozilla.com"
+  - "twsmith@mozilla.com"
+sanitizers:
+  - address
+  # - memory ## msan disabled after a clang bump. Please re-enable it, Try to fix any build warnings and build errors, as well as msan runtime warnings and errors. msan failure log: https://oss-fuzz-gcb-logs.storage.googleapis.com/log-f5583c45-faa2-44d4-8b2f-b27e83c25588.txt
+  - undefined
+architectures:
+  - x86_64
+  - i386
+main_repo: 'https://github.com/google/brunsli.git'
+file_github_issue: True
