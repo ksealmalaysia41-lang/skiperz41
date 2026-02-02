@@ -1,0 +1,5 @@
+homepage: "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS"
+primary_contact: "fkiefer@mozilla.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
