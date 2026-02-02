@@ -1,0 +1,14 @@
+homepage: "http://www.xmlsoft.org/"
+auto_ccs:
+  - "dominicc@chromium.org"
+  - "ddkilzer@apple.com"
+  - "benl@google.com"
+  - "wellnhofer@aevum.de"
+  - "akilsrin@apple.com"
+sanitizers:
+  - address
+  - memory
+  - undefined
+labels:
+  libxml2_xml_reader_for_file_fuzzer:
+    - sundew
