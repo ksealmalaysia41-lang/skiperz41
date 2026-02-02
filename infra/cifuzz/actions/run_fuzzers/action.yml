@@ -1,0 +1,17 @@
+# action.yml
+name: 'run-fuzzers'
+description: 'Runs fuzz target binaries for a specified length of time.'
+inputs:
+  fuzz-seconds:
+    description: 'The total time allotted for fuzzing in seconds.'
+    required: true
+    default: 600
+  dry-run:
+    description: 'If set, run the action without actually reporting a failure.'
+    default: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    FUZZ_SECONDS: ${{ inputs.fuzz-seconds }}
+    DRY_RUN: ${{ inputs.dry-run}}
