@@ -1,0 +1,10 @@
+homepage: https://github.com/brianmario/yajl-ruby
+language: c++
+primary_contact: seniorlopez@gmail.com
+sanitizers:
+  - address
+  - undefined
+  - memory
+auto_ccs:
+  - aaron.patterson@gmail.com
+  - jonathan@titanous.com
