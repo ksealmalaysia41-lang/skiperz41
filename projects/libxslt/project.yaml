@@ -1,0 +1,9 @@
+homepage: "http://www.xmlsoft.org/libxslt/"
+primary_contact: "wellnhofer@aevum.de"
+auto_ccs:
+  - "schenney@chromium.org"
+  - "ddkilzer@apple.com"
+sanitizers:
+  - address
+  - memory
+  - undefined

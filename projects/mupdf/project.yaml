@@ -1,0 +1,13 @@
+homepage: "https://www.mupdf.com"
+primary_contact: tor.andersson@artifex.com
+auto_ccs:
+  - jonathan@titanous.com
+  - sebastian.rasmussen@artifex.com
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - dataflow
+sanitizers:
+  - address
+  - dataflow
+  - memory

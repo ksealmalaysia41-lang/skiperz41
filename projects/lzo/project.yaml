@@ -1,0 +1,12 @@
+homepage: "http://www.oberhumer.com"
+primary_contact: "info@oberhumer.com"
+auto_ccs:
+  - "bshas3@gmail.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - dataflow
+sanitizers:
+  - address
+  - dataflow
+  - memory

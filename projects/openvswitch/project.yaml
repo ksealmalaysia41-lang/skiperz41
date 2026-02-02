@@ -1,0 +1,17 @@
+homepage: "http://www.openvswitch.org"
+primary_contact: "blp@ovn.org"
+auto_ccs:
+  - "jpettit@ovn.org"
+  - "pfaffben@gmail.com" 
+  - "pkusunyifeng@gmail.com"
+  - "bshas3@gmail.com"
+  - "cpp.code.lv@gmail.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - dataflow
+sanitizers:
+  - address
+  - dataflow
+  - memory
+  - undefined
