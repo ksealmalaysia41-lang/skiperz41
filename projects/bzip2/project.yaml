@@ -1,0 +1,14 @@
+homepage: "https://sourceware.org/bzip2/"
+primary_contact: "bzip2fuzzer@gmail.com"
+auto_ccs:
+  - "bshas3@gmail.com"
+  - "twsmith@mozilla.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - dataflow
+sanitizers:
+  - address
+  - dataflow
+  - memory
+  - undefined
