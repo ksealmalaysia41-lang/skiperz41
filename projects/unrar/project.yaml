@@ -1,0 +1,17 @@
+homepage: "http://www.rarlab.com/"
+language: c++
+primary_contact: "roshal@rarlab.com"
+auto_ccs:
+  - "vakh@chromium.org"
+  - "drubery@chromium.org"
+sanitizers:
+  - address
+  # - memory ## msan disabled after a clang bump. Please re-enable it, Try to fix any build warnings and build errors, as well as msan runtime warnings and errors. msan failure log: https://oss-fuzz-gcb-logs.storage.googleapis.com/log-0e63ea12-6919-4452-a96c-7dbe4c9811ae.txt
+  - undefined
+main_repo: 'https://github.com/aawc/unrar.git'
+
+fuzzing_engines:
+  - afl
+  - honggfuzz
+  - libfuzzer
+

@@ -1,0 +1,26 @@
+homepage: "https://github.com/supranational/blst"
+language: c++
+primary_contact: "guidovranken@gmail.com"
+main_repo: "https://github.com/supranational/blst.git"
+sanitizers:
+ - address
+ - undefined
+ # - memory ## msan disabled after a clang bump. Please re-enable it, Try to fix any build warnings and build errors, as well as msan runtime warnings and errors. msan failure log: https://oss-fuzz-gcb-logs.storage.googleapis.com/log-3cd81ff0-7552-4e87-973e-ff5da4520ad5.txt
+architectures:
+ - x86_64
+ - i386
+auto_ccs:
+ - "kelly@supranational.net"
+ - "diederik.loerakker@ethereum.org"
+ - "hoffmang@chia.net"
+ - "bram@chia.net"
+ - "mariano@chia.net"
+ - "arvid@chia.net"
+ - "bill@chia.net"
+ - "pratyush795@gmail.com"
+
+fuzzing_engines:
+  - afl
+  - honggfuzz
+  - libfuzzer
+

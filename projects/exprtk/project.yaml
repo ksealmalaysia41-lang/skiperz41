@@ -1,0 +1,14 @@
+homepage: "https://www.partow.net/programming/exprtk/index.html"
+language: c++
+primary_contact: "exprtk.dev@gmail.com"
+auto_ccs:
+    - "exprtk.dev@gmail.com"
+fuzzing_engines:
+    - libfuzzer
+    - afl
+    - honggfuzz
+sanitizers:
+    - address
+    - undefined
+    # - memory ## msan disabled after a clang bump. Please re-enable it, Try to fix any build warnings and build errors, as well as msan runtime warnings and errors. msan failure log: https://oss-fuzz-gcb-logs.storage.googleapis.com/log-fbecbadc-e426-46cb-b2fc-be9012b5f1be.txt
+main_repo: 'https://github.com/ArashPartow/exprtk.git'
